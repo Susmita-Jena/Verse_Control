@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verse Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="leaves" id="leaves" aria-hidden="true"></div>
+ 
+<header>
+  <div class="logo-row">
+    <svg class="leaf-mark" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 2C6 6 3 12 5 19C9 22 16 22 21 17C23 10 20 4 13 2Z" fill="var(--accent-moss)"/>
+      <path d="M13 2C13 9 12 15 6 20" stroke="var(--card-bg)" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+    <div class="logo">verse control<span class="cursor"></span></div>
+    <span class="branch-tag">main</span>
+    <button class="theme-toggle mono" id="themeToggle" type="button" aria-label="Toggle light or dark theme">
+      $ git checkout light
+    </button>
+  </div>
+  <p class="tagline">A running log of poems — drafts included. Every branch grows its own leaves.</p>
+  <div class="stats-row mono">
+    <span><b>3</b> commits</span>
+    <span><b>1</b> branch</span>
+    <span><b>1</b> contributor</span>
+  </div>
+</header>
+ 
+<section class="subscribe">
+  <form id="subForm">
+    <input type="email" id="subEmail" placeholder="you@somewhere.com" required aria-label="Email address">
+    <button type="submit">git pull updates</button>
+  </form>
+  <span class="subscribe-note mono">no spam commits, just poems, whenever they're ready to ship.</span>
+</section>
+ 
+<main id="feed">
+ 
+  <article class="entry">
+    <div class="entry-meta mono">
+      <span class="hash">#f2a91d4</span>
+      <span>·</span>
+      <span>4 days ago</span>
+    </div>
+    <p class="commit-msg"><span class="type">feat</span><span class="scope">(family)</span>: a yellow carnation</p>
+    <div class="card">
+      <h2 class="poem-title">A Yellow Carnation</h2>
+      <div class="poem-body">So failing and falling apart;
+Life makes no sense to me,
+If I can't find success later-
+God forbid the curse of being a failure,
+Definitely kills me inside completely.
+ 
+But is it really my fault?
+That despite after everything
+At last, my people misunderstand me so well-
+And never for once they ever
+Will resonate the voices that my mind says.
+ 
+The girl who once promised joy now wears
+The badge of failure, shame, and pain,
+Labeled selfish, arrogant, and heartless—
+A reflection of the love that's lost,
+A family tie that's frayed.
+ 
+'ONLY THE WISE UNDERSTAND
+THE UNFATHOMABLE THINGS OF A SOUL'
+They said.
+So where are my people? When I wanted
+Their hand holding? Their love and affection-
+Where are my OWN BLOODED PEOPLE?
+Who carry the paradoxical pride of owning me
+Yet abandon me at the times of need?</div>
+      <p class="poem-byline">— Susmita Jena</p>
+      <button class="diff-toggle" type="button">view diff — no earlier revisions</button>
+      <div class="diff-view">
+<span class="added">— this is the first commit on this branch, nothing to compare against yet.</span>
+      </div>
+    </div>
+  </article>
+ 
+  <article class="entry">
+    <div class="entry-meta mono">
+      <span class="hash">#0e6b7c3</span>
+      <span>·</span>
+      <span>10 days ago</span>
+    </div>
+    <p class="commit-msg"><span class="type">feat</span><span class="scope">(peace)</span>: dried roses and peace</p>
+    <div class="card">
+      <h2 class="poem-title">Dried Roses and Peace</h2>
+      <div class="poem-body">Bittersweet emotions within -
+Yet here you are sanguine,
+Choosing love over everytime
+Representing as the best crime.
+ 
+There's a lot of ambiguity in me
+However, the thoughts are free!
+Nourished ones live in hell
+While the quiet finds home in a cockleshell.
+ 
+You dare ask me what life is to you?
+And I am already talking through my eyes; you know who.
+An extraordinary gift of the Almighty
+'Or a curse in disguise', I said wisely.
+ 
+Whatever you ponder upon
+You and I are going to wait till dawn-
+To witness everything as a tainted masterpiece
+Silently opting for dried roses and peace.</div>
+      <p class="poem-byline">— Susmita Jena</p>
+      <button class="diff-toggle" type="button">view diff — no earlier revisions</button>
+      <div class="diff-view">
+<span class="added">— this is the first commit on this branch, nothing to compare against yet.</span>
+      </div>
+    </div>
+  </article>
+ 
+  <article class="entry">
+    <div class="entry-meta mono">
+      <span class="hash">#3c88a02</span>
+      <span>·</span>
+      <span>21 days ago</span>
+    </div>
+    <p class="commit-msg"><span class="type">feat</span><span class="scope">(home)</span>: initial commit</p>
+    <div class="card">
+      <h2 class="poem-title">Initial Commit</h2>
+      <div class="poem-body">Berhampur taught me that heat has a texture —
+thick enough to lean on,
+loud with cicadas arguing about nothing.
+ 
+I left in pieces, the way everyone does,
+and kept committing small changes to myself
+ever since: a haircut, a new city, a language
+I'm still debugging.
+ 
+But some functions never got refactored.
+I still flinch at loud doors.
+I still call it home
+without meaning to.</div>
+      <p class="poem-byline">— Susmita Jena</p>
+      <button class="diff-toggle" type="button">view diff — no earlier revisions</button>
+      <div class="diff-view">
+<span class="added">— this is the first commit on this branch, nothing to compare against yet.</span>
+      </div>
+    </div>
+  </article>
+ 
+</main>
+ 
+<footer>
+  <div>verse control — a poetry log, versioned.</div>
+  <span class="mono">$ git log --poems --oneline --forever</span>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
